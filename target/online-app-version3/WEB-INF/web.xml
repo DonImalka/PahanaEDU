@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+  <display-name>Pahana Edu Bookshop Management System</display-name>
+  
+  <!-- Authentication Controller -->
+  <servlet>
+  	<servlet-name>AuthController</servlet-name>
+  	<display-name>AuthController</display-name>
+  	<description>Controller for authentication and user management</description>
+  	<servlet-class>edu.pahana.controller.AuthController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AuthController</servlet-name>
+  	<url-pattern>/auth</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Customer Controller -->
+  <servlet>
+  	<servlet-name>CustomerController</servlet-name>
+  	<display-name>CustomerController</display-name>
+  	<description>Controller for customer management</description>
+  	<servlet-class>edu.pahana.controller.CustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerController</servlet-name>
+  	<url-pattern>/customer</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Session Configuration -->
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  
+  <!-- Welcome File List -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
