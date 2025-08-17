@@ -211,7 +211,6 @@
                     <select id="role" name="role" required>
                         <option value="">Select Role</option>
                         <option value="user">User</option>
-                        <option value="manager">Manager</option>
                         <option value="admin">Admin</option>
                     </select>
                 </div>

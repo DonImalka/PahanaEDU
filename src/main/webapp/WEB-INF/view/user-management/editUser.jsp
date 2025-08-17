@@ -281,7 +281,6 @@
                     <select id="role" name="role" required>
                         <option value="">Select Role</option>
                         <option value="user" ${user.role == 'user' ? 'selected' : ''}>User</option>
-                        <option value="manager" ${user.role == 'manager' ? 'selected' : ''}>Manager</option>
                         <option value="admin" ${user.role == 'admin' ? 'selected' : ''}>Admin</option>
                     </select>
                 </div>
