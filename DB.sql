@@ -1,7 +1,7 @@
--- Create the database if it doesn't exist
+
 CREATE DATABASE IF NOT EXISTS online_app_db;
 
--- Use the database
+
 USE online_app_db;
 
 -- Create the User table for authentication
